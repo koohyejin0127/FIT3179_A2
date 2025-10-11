@@ -1,0 +1,481 @@
+state,year,age,population
+Johor,2017,Children (0-14),883400
+Johor,2017,Youth (15-24),679400
+Johor,2017,Working Age (25-54),1586000
+Johor,2017,Retirement Age (55-64),299900
+Johor,2017,Elderly (65+),248300
+Johor,2018,Children (0-14),884400
+Johor,2018,Youth (15-24),688500
+Johor,2018,Working Age (25-54),1606900
+Johor,2018,Retirement Age (55-64),309800
+Johor,2018,Elderly (65+),259800
+Johor,2019,Children (0-14),882000
+Johor,2019,Youth (15-24),686900
+Johor,2019,Working Age (25-54),1605200
+Johor,2019,Retirement Age (55-64),316800
+Johor,2019,Elderly (65+),270300
+Johor,2020,Children (0-14),959300
+Johor,2020,Youth (15-24),734100
+Johor,2020,Working Age (25-54),1725300
+Johor,2020,Retirement Age (55-64),346300
+Johor,2020,Elderly (65+),244600
+Johor,2021,Children (0-14),949300
+Johor,2021,Youth (15-24),727200
+Johor,2021,Working Age (25-54),1731900
+Johor,2021,Retirement Age (55-64),353200
+Johor,2021,Elderly (65+),258600
+Johor,2022,Children (0-14),930900
+Johor,2022,Youth (15-24),724500
+Johor,2022,Working Age (25-54),1744100
+Johor,2022,Retirement Age (55-64),358700
+Johor,2022,Elderly (65+),269900
+Kedah,2017,Children (0-14),537300
+Kedah,2017,Youth (15-24),434500
+Kedah,2017,Working Age (25-54),826000
+Kedah,2017,Retirement Age (55-64),187300
+Kedah,2017,Elderly (65+),158700
+Kedah,2018,Children (0-14),536000
+Kedah,2018,Youth (15-24),433100
+Kedah,2018,Working Age (25-54),836400
+Kedah,2018,Retirement Age (55-64),191500
+Kedah,2018,Elderly (65+),165500
+Kedah,2019,Children (0-14),534700
+Kedah,2019,Youth (15-24),427500
+Kedah,2019,Working Age (25-54),843700
+Kedah,2019,Retirement Age (55-64),195000
+Kedah,2019,Elderly (65+),173000
+Kedah,2020,Children (0-14),538900
+Kedah,2020,Youth (15-24),407100
+Kedah,2020,Working Age (25-54),825200
+Kedah,2020,Retirement Age (55-64),191800
+Kedah,2020,Elderly (65+),168500
+Kedah,2021,Children (0-14),536500
+Kedah,2021,Youth (15-24),399300
+Kedah,2021,Working Age (25-54),841500
+Kedah,2021,Retirement Age (55-64),195200
+Kedah,2021,Elderly (65+),179200
+Kedah,2022,Children (0-14),533500
+Kedah,2022,Youth (15-24),391100
+Kedah,2022,Working Age (25-54),857900
+Kedah,2022,Retirement Age (55-64),195800
+Kedah,2022,Elderly (65+),185000
+Kelantan,2017,Children (0-14),554900
+Kelantan,2017,Youth (15-24),398900
+Kelantan,2017,Working Age (25-54),624200
+Kelantan,2017,Retirement Age (55-64),137100
+Kelantan,2017,Elderly (65+),113800
+Kelantan,2018,Children (0-14),558900
+Kelantan,2018,Youth (15-24),392900
+Kelantan,2018,Working Age (25-54),649100
+Kelantan,2018,Retirement Age (55-64),141400
+Kelantan,2018,Elderly (65+),118000
+Kelantan,2019,Children (0-14),561300
+Kelantan,2019,Youth (15-24),385200
+Kelantan,2019,Working Age (25-54),670200
+Kelantan,2019,Retirement Age (55-64),145000
+Kelantan,2019,Elderly (65+),122200
+Kelantan,2020,Children (0-14),537200
+Kelantan,2020,Youth (15-24),378800
+Kelantan,2020,Working Age (25-54),612700
+Kelantan,2020,Retirement Age (55-64),149800
+Kelantan,2020,Elderly (65+),114200
+Kelantan,2021,Children (0-14),538900
+Kelantan,2021,Youth (15-24),379900
+Kelantan,2021,Working Age (25-54),622100
+Kelantan,2021,Retirement Age (55-64),151600
+Kelantan,2021,Elderly (65+),119800
+Kelantan,2022,Children (0-14),539100
+Kelantan,2022,Youth (15-24),382400
+Kelantan,2022,Working Age (25-54),634200
+Kelantan,2022,Retirement Age (55-64),152300
+Kelantan,2022,Elderly (65+),122700
+Melaka,2017,Children (0-14),211500
+Melaka,2017,Youth (15-24),178700
+Melaka,2017,Working Age (25-54),373500
+Melaka,2017,Retirement Age (55-64),78300
+Melaka,2017,Elderly (65+),71100
+Melaka,2018,Children (0-14),211700
+Melaka,2018,Youth (15-24),174200
+Melaka,2018,Working Age (25-54),382100
+Melaka,2018,Retirement Age (55-64),80500
+Melaka,2018,Elderly (65+),74100
+Melaka,2019,Children (0-14),211400
+Melaka,2019,Youth (15-24),168900
+Melaka,2019,Working Age (25-54),388300
+Melaka,2019,Retirement Age (55-64),82700
+Melaka,2019,Elderly (65+),77100
+Melaka,2020,Children (0-14),234000
+Melaka,2020,Youth (15-24),194100
+Melaka,2020,Working Age (25-54),430700
+Melaka,2020,Retirement Age (55-64),76400
+Melaka,2020,Elderly (65+),63200
+Melaka,2021,Children (0-14),234100
+Melaka,2021,Youth (15-24),190400
+Melaka,2021,Working Age (25-54),437500
+Melaka,2021,Retirement Age (55-64),77500
+Melaka,2021,Elderly (65+),65100
+Melaka,2022,Children (0-14),234900
+Melaka,2022,Youth (15-24),186900
+Melaka,2022,Working Age (25-54),442600
+Melaka,2022,Retirement Age (55-64),77200
+Melaka,2022,Elderly (65+),66900
+Negeri Sembilan,2017,Children (0-14),261500
+Negeri Sembilan,2017,Youth (15-24),222100
+Negeri Sembilan,2017,Working Age (25-54),446800
+Negeri Sembilan,2017,Retirement Age (55-64),101900
+Negeri Sembilan,2017,Elderly (65+),81600
+Negeri Sembilan,2018,Children (0-14),259700
+Negeri Sembilan,2018,Youth (15-24),220800
+Negeri Sembilan,2018,Working Age (25-54),453300
+Negeri Sembilan,2018,Retirement Age (55-64),103000
+Negeri Sembilan,2018,Elderly (65+),86000
+Negeri Sembilan,2019,Children (0-14),257000
+Negeri Sembilan,2019,Youth (15-24),217500
+Negeri Sembilan,2019,Working Age (25-54),457100
+Negeri Sembilan,2019,Retirement Age (55-64),103800
+Negeri Sembilan,2019,Elderly (65+),90700
+Negeri Sembilan,2020,Children (0-14),302100
+Negeri Sembilan,2020,Youth (15-24),200400
+Negeri Sembilan,2020,Working Age (25-54),507500
+Negeri Sembilan,2020,Retirement Age (55-64),108700
+Negeri Sembilan,2020,Elderly (65+),81400
+Negeri Sembilan,2021,Children (0-14),300900
+Negeri Sembilan,2021,Youth (15-24),200600
+Negeri Sembilan,2021,Working Age (25-54),506600
+Negeri Sembilan,2021,Retirement Age (55-64),110000
+Negeri Sembilan,2021,Elderly (65+),86000
+Negeri Sembilan,2022,Children (0-14),299400
+Negeri Sembilan,2022,Youth (15-24),200900
+Negeri Sembilan,2022,Working Age (25-54),509400
+Negeri Sembilan,2022,Retirement Age (55-64),110000
+Negeri Sembilan,2022,Elderly (65+),88300
+Pahang,2017,Children (0-14),426300
+Pahang,2017,Youth (15-24),322600
+Pahang,2017,Working Age (25-54),658100
+Pahang,2017,Retirement Age (55-64),129300
+Pahang,2017,Elderly (65+),110800
+Pahang,2018,Children (0-14),423900
+Pahang,2018,Youth (15-24),319900
+Pahang,2018,Working Age (25-54),672600
+Pahang,2018,Retirement Age (55-64),132500
+Pahang,2018,Elderly (65+),115800
+Pahang,2019,Children (0-14),420100
+Pahang,2019,Youth (15-24),314500
+Pahang,2019,Working Age (25-54),680800
+Pahang,2019,Retirement Age (55-64),135100
+Pahang,2019,Elderly (65+),121000
+Pahang,2020,Children (0-14),424600
+Pahang,2020,Youth (15-24),279200
+Pahang,2020,Working Age (25-54),670900
+Pahang,2020,Retirement Age (55-64),116300
+Pahang,2020,Elderly (65+),100300
+Pahang,2021,Children (0-14),418400
+Pahang,2021,Youth (15-24),287200
+Pahang,2021,Working Age (25-54),673200
+Pahang,2021,Retirement Age (55-64),118700
+Pahang,2021,Elderly (65+),104100
+Pahang,2022,Children (0-14),411400
+Pahang,2022,Youth (15-24),294900
+Pahang,2022,Working Age (25-54),681000
+Pahang,2022,Retirement Age (55-64),120000
+Pahang,2022,Elderly (65+),106900
+Perak,2017,Children (0-14),553600
+Perak,2017,Youth (15-24),491800
+Perak,2017,Working Age (25-54),954100
+Perak,2017,Retirement Age (55-64),247200
+Perak,2017,Elderly (65+),246500
+Perak,2018,Children (0-14),541900
+Perak,2018,Youth (15-24),488100
+Perak,2018,Working Age (25-54),967000
+Perak,2018,Retirement Age (55-64),250300
+Perak,2018,Elderly (65+),256000
+Perak,2019,Children (0-14),530100
+Perak,2019,Youth (15-24),481200
+Perak,2019,Working Age (25-54),978500
+Perak,2019,Retirement Age (55-64),252900
+Perak,2019,Elderly (65+),266100
+Perak,2020,Children (0-14),578700
+Perak,2020,Youth (15-24),442500
+Perak,2020,Working Age (25-54),1001900
+Perak,2020,Retirement Age (55-64),249800
+Perak,2020,Elderly (65+),223300
+Perak,2021,Children (0-14),573900
+Perak,2021,Youth (15-24),445600
+Perak,2021,Working Age (25-54),1010900
+Perak,2021,Retirement Age (55-64),251100
+Perak,2021,Elderly (65+),234200
+Perak,2022,Children (0-14),564700
+Perak,2022,Youth (15-24),445000
+Perak,2022,Working Age (25-54),1015100
+Perak,2022,Retirement Age (55-64),249900
+Perak,2022,Elderly (65+),239700
+Perlis,2017,Children (0-14),61900
+Perlis,2017,Youth (15-24),48800
+Perlis,2017,Working Age (25-54),96700
+Perlis,2017,Retirement Age (55-64),23000
+Perlis,2017,Elderly (65+),21600
+Perlis,2018,Children (0-14),61900
+Perlis,2018,Youth (15-24),46100
+Perlis,2018,Working Age (25-54),99900
+Perlis,2018,Retirement Age (55-64),23300
+Perlis,2018,Elderly (65+),22500
+Perlis,2019,Children (0-14),62000
+Perlis,2019,Youth (15-24),43300
+Perlis,2019,Working Age (25-54),102000
+Perlis,2019,Retirement Age (55-64),23600
+Perlis,2019,Elderly (65+),23200
+Perlis,2020,Children (0-14),58200
+Perlis,2020,Youth (15-24),69400
+Perlis,2020,Working Age (25-54),111300
+Perlis,2020,Retirement Age (55-64),23500
+Perlis,2020,Elderly (65+),22400
+Perlis,2021,Children (0-14),57300
+Perlis,2021,Youth (15-24),69100
+Perlis,2021,Working Age (25-54),114400
+Perlis,2021,Retirement Age (55-64),23800
+Perlis,2021,Elderly (65+),23000
+Perlis,2022,Children (0-14),57500
+Perlis,2022,Youth (15-24),66800
+Perlis,2022,Working Age (25-54),118300
+Perlis,2022,Retirement Age (55-64),23800
+Perlis,2022,Elderly (65+),23300
+Penang,2017,Children (0-14),343200
+Penang,2017,Youth (15-24),306200
+Penang,2017,Working Age (25-54),793400
+Penang,2017,Retirement Age (55-64),159600
+Penang,2017,Elderly (65+),141300
+Penang,2018,Children (0-14),341200
+Penang,2018,Youth (15-24),304500
+Penang,2018,Working Age (25-54),806600
+Penang,2018,Retirement Age (55-64),163200
+Penang,2018,Elderly (65+),147300
+Penang,2019,Children (0-14),337200
+Penang,2019,Youth (15-24),299100
+Penang,2019,Working Age (25-54),812600
+Penang,2019,Retirement Age (55-64),166500
+Penang,2019,Elderly (65+),153500
+Penang,2020,Children (0-14),349800
+Penang,2020,Youth (15-24),290000
+Penang,2020,Working Age (25-54),814400
+Penang,2020,Retirement Age (55-64),171200
+Penang,2020,Elderly (65+),115100
+Penang,2021,Children (0-14),342900
+Penang,2021,Youth (15-24),283000
+Penang,2021,Working Age (25-54),817400
+Penang,2021,Retirement Age (55-64),174000
+Penang,2021,Elderly (65+),122500
+Penang,2022,Children (0-14),336600
+Penang,2022,Youth (15-24),277400
+Penang,2022,Working Age (25-54),822100
+Penang,2022,Retirement Age (55-64),176300
+Penang,2022,Elderly (65+),128600
+Sabah,2017,Children (0-14),931800
+Sabah,2017,Youth (15-24),913000
+Sabah,2017,Working Age (25-54),1687700
+Sabah,2017,Retirement Age (55-64),200100
+Sabah,2017,Elderly (65+),123400
+Sabah,2018,Children (0-14),923700
+Sabah,2018,Youth (15-24),913900
+Sabah,2018,Working Age (25-54),1722300
+Sabah,2018,Retirement Age (55-64),209800
+Sabah,2018,Elderly (65+),128700
+Sabah,2019,Children (0-14),911800
+Sabah,2019,Youth (15-24),903900
+Sabah,2019,Working Age (25-54),1736400
+Sabah,2019,Retirement Age (55-64),217800
+Sabah,2019,Elderly (65+),134600
+Sabah,2020,Children (0-14),907100
+Sabah,2020,Youth (15-24),700900
+Sabah,2020,Working Age (25-54),1428900
+Sabah,2020,Retirement Age (55-64),189900
+Sabah,2020,Elderly (65+),192000
+Sabah,2021,Children (0-14),882800
+Sabah,2021,Youth (15-24),699600
+Sabah,2021,Working Age (25-54),1440100
+Sabah,2021,Retirement Age (55-64),194300
+Sabah,2021,Elderly (65+),195700
+Sabah,2022,Children (0-14),856000
+Sabah,2022,Youth (15-24),704300
+Sabah,2022,Working Age (25-54),1455300
+Sabah,2022,Retirement Age (55-64),198000
+Sabah,2022,Elderly (65+),201600
+Sarawak,2017,Children (0-14),664800
+Sarawak,2017,Youth (15-24),544600
+Sarawak,2017,Working Age (25-54),1140900
+Sarawak,2017,Retirement Age (55-64),223400
+Sarawak,2017,Elderly (65+),192700
+Sarawak,2018,Children (0-14),651400
+Sarawak,2018,Youth (15-24),544900
+Sarawak,2018,Working Age (25-54),1162100
+Sarawak,2018,Retirement Age (55-64),231000
+Sarawak,2018,Elderly (65+),202200
+Sarawak,2019,Children (0-14),636100
+Sarawak,2019,Youth (15-24),542700
+Sarawak,2019,Working Age (25-54),1176900
+Sarawak,2019,Retirement Age (55-64),237600
+Sarawak,2019,Elderly (65+),212800
+Sarawak,2020,Children (0-14),540300
+Sarawak,2020,Youth (15-24),423900
+Sarawak,2020,Working Age (25-54),1078100
+Sarawak,2020,Retirement Age (55-64),226600
+Sarawak,2020,Elderly (65+),184800
+Sarawak,2021,Children (0-14),532500
+Sarawak,2021,Youth (15-24),423400
+Sarawak,2021,Working Age (25-54),1082900
+Sarawak,2021,Retirement Age (55-64),233400
+Sarawak,2021,Elderly (65+),193200
+Sarawak,2022,Children (0-14),521300
+Sarawak,2022,Youth (15-24),423400
+Sarawak,2022,Working Age (25-54),1092800
+Sarawak,2022,Retirement Age (55-64),237500
+Sarawak,2022,Elderly (65+),198600
+Selangor,2017,Children (0-14),1501400
+Selangor,2017,Youth (15-24),1026200
+Selangor,2017,Working Age (25-54),3111600
+Selangor,2017,Retirement Age (55-64),435500
+Selangor,2017,Elderly (65+),306100
+Selangor,2018,Children (0-14),1513000
+Selangor,2018,Youth (15-24),1030800
+Selangor,2018,Working Age (25-54),3151000
+Selangor,2018,Retirement Age (55-64),456500
+Selangor,2018,Elderly (65+),323700
+Selangor,2019,Children (0-14),1510400
+Selangor,2019,Youth (15-24),1027400
+Selangor,2019,Working Age (25-54),3151500
+Selangor,2019,Retirement Age (55-64),475400
+Selangor,2019,Elderly (65+),341500
+Selangor,2020,Children (0-14),1549600
+Selangor,2020,Youth (15-24),1087800
+Selangor,2020,Working Age (25-54),3341500
+Selangor,2020,Retirement Age (55-64),532900
+Selangor,2020,Elderly (65+),482600
+Selangor,2021,Children (0-14),1531600
+Selangor,2021,Youth (15-24),1081200
+Selangor,2021,Working Age (25-54),3345200
+Selangor,2021,Retirement Age (55-64),552400
+Selangor,2021,Elderly (65+),504500
+Selangor,2022,Children (0-14),1516700
+Selangor,2022,Youth (15-24),1080100
+Selangor,2022,Working Age (25-54),3359900
+Selangor,2022,Retirement Age (55-64),568900
+Selangor,2022,Elderly (65+),524900
+Terengganu,2017,Children (0-14),367400
+Terengganu,2017,Youth (15-24),249000
+Terengganu,2017,Working Age (25-54),440200
+Terengganu,2017,Retirement Age (55-64),85900
+Terengganu,2017,Elderly (65+),65400
+Terengganu,2018,Children (0-14),372100
+Terengganu,2018,Youth (15-24),247300
+Terengganu,2018,Working Age (25-54),452000
+Terengganu,2018,Retirement Age (55-64),89000
+Terengganu,2018,Elderly (65+),68000
+Terengganu,2019,Children (0-14),376200
+Terengganu,2019,Youth (15-24),244600
+Terengganu,2019,Working Age (25-54),461800
+Terengganu,2019,Retirement Age (55-64),91500
+Terengganu,2019,Elderly (65+),70500
+Terengganu,2020,Children (0-14),329100
+Terengganu,2020,Youth (15-24),220500
+Terengganu,2020,Working Age (25-54),447000
+Terengganu,2020,Retirement Age (55-64),89600
+Terengganu,2020,Elderly (65+),63300
+Terengganu,2021,Children (0-14),333700
+Terengganu,2021,Youth (15-24),223700
+Terengganu,2021,Working Age (25-54),455300
+Terengganu,2021,Retirement Age (55-64),91100
+Terengganu,2021,Elderly (65+),67000
+Terengganu,2022,Children (0-14),336800
+Terengganu,2022,Youth (15-24),226700
+Terengganu,2022,Working Age (25-54),462600
+Terengganu,2022,Retirement Age (55-64),91900
+Terengganu,2022,Elderly (65+),68700
+Kuala Lumpur,2017,Children (0-14),368900
+Kuala Lumpur,2017,Youth (15-24),273900
+Kuala Lumpur,2017,Working Age (25-54),885800
+Kuala Lumpur,2017,Retirement Age (55-64),149200
+Kuala Lumpur,2017,Elderly (65+),115300
+Kuala Lumpur,2018,Children (0-14),364000
+Kuala Lumpur,2018,Youth (15-24),269200
+Kuala Lumpur,2018,Working Age (25-54),881000
+Kuala Lumpur,2018,Retirement Age (55-64),154400
+Kuala Lumpur,2018,Elderly (65+),121300
+Kuala Lumpur,2019,Children (0-14),359100
+Kuala Lumpur,2019,Youth (15-24),264200
+Kuala Lumpur,2019,Working Age (25-54),872200
+Kuala Lumpur,2019,Retirement Age (55-64),159400
+Kuala Lumpur,2019,Elderly (65+),127700
+Kuala Lumpur,2020,Children (0-14),395800
+Kuala Lumpur,2020,Youth (15-24),251000
+Kuala Lumpur,2020,Working Age (25-54),1076000
+Kuala Lumpur,2020,Retirement Age (55-64),128900
+Kuala Lumpur,2020,Elderly (65+),130300
+Kuala Lumpur,2021,Children (0-14),382900
+Kuala Lumpur,2021,Youth (15-24),255700
+Kuala Lumpur,2021,Working Age (25-54),1061900
+Kuala Lumpur,2021,Retirement Age (55-64),132100
+Kuala Lumpur,2021,Elderly (65+),131500
+Kuala Lumpur,2022,Children (0-14),371500
+Kuala Lumpur,2022,Youth (15-24),261900
+Kuala Lumpur,2022,Working Age (25-54),1060400
+Kuala Lumpur,2022,Retirement Age (55-64),134700
+Kuala Lumpur,2022,Elderly (65+),132600
+Labuan,2017,Children (0-14),26700
+Labuan,2017,Youth (15-24),16500
+Labuan,2017,Working Age (25-54),44500
+Labuan,2017,Retirement Age (55-64),6300
+Labuan,2017,Elderly (65+),3700
+Labuan,2018,Children (0-14),26500
+Labuan,2018,Youth (15-24),16400
+Labuan,2018,Working Age (25-54),45300
+Labuan,2018,Retirement Age (55-64),6600
+Labuan,2018,Elderly (65+),4100
+Labuan,2019,Children (0-14),26300
+Labuan,2019,Youth (15-24),16300
+Labuan,2019,Working Age (25-54),45400
+Labuan,2019,Retirement Age (55-64),7000
+Labuan,2019,Elderly (65+),4300
+Labuan,2020,Children (0-14),26000
+Labuan,2020,Youth (15-24),16800
+Labuan,2020,Working Age (25-54),41700
+Labuan,2020,Retirement Age (55-64),6500
+Labuan,2020,Elderly (65+),4000
+Labuan,2021,Children (0-14),26200
+Labuan,2021,Youth (15-24),16500
+Labuan,2021,Working Age (25-54),42300
+Labuan,2021,Retirement Age (55-64),6800
+Labuan,2021,Elderly (65+),4100
+Labuan,2022,Children (0-14),26400
+Labuan,2022,Youth (15-24),16200
+Labuan,2022,Working Age (25-54),42800
+Labuan,2022,Retirement Age (55-64),6900
+Labuan,2022,Elderly (65+),4600
+Putrajaya,2017,Children (0-14),33600
+Putrajaya,2017,Youth (15-24),9700
+Putrajaya,2017,Working Age (25-54),38500
+Putrajaya,2017,Retirement Age (55-64),4800
+Putrajaya,2017,Elderly (65+),1200
+Putrajaya,2018,Children (0-14),35400
+Putrajaya,2018,Youth (15-24),13700
+Putrajaya,2018,Working Age (25-54),41200
+Putrajaya,2018,Retirement Age (55-64),5500
+Putrajaya,2018,Elderly (65+),1400
+Putrajaya,2019,Children (0-14),36900
+Putrajaya,2019,Youth (15-24),15700
+Putrajaya,2019,Working Age (25-54),43200
+Putrajaya,2019,Retirement Age (55-64),6100
+Putrajaya,2019,Elderly (65+),1700
+Putrajaya,2020,Children (0-14),41500
+Putrajaya,2020,Youth (15-24),10100
+Putrajaya,2020,Working Age (25-54),52300
+Putrajaya,2020,Retirement Age (55-64),3700
+Putrajaya,2020,Elderly (65+),1600
+Putrajaya,2021,Children (0-14),43300
+Putrajaya,2021,Youth (15-24),11200
+Putrajaya,2021,Working Age (25-54),55000
+Putrajaya,2021,Retirement Age (55-64),4100
+Putrajaya,2021,Elderly (65+),1800
+Putrajaya,2022,Children (0-14),43300
+Putrajaya,2022,Youth (15-24),12200
+Putrajaya,2022,Working Age (25-54),55200
+Putrajaya,2022,Retirement Age (55-64),4500
+Putrajaya,2022,Elderly (65+),1900
