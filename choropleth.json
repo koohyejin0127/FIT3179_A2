@@ -46,6 +46,13 @@
       },
       "value": 0.2
     },
+    "strokeWidth": {
+    "condition": {
+      "test": "state_select == 'Malaysia' || datum.properties.Name == state_select",
+      "value": 0.5
+    },
+    "value": 2
+  },
     "tooltip": [
       {"field": "properties.Name", "title": "State"},
       {"field": "schools_per_100k", "title": "Schools per 100k"},
