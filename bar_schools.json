@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/koohyejin0127/FIT3179_A2/refs/heads/main/data/schools_states.csv"
+  },
+  "params": [{"name": "state_select", "value": "Malaysia"}],
+  "transform": [
+    {"filter": "datum.date == '1/1/2022'"},
+    {
+      "calculate": "datum.stage == 'primary' ? 'Primary' : datum.stage == 'secondary' ? 'Secondary' : 'Tertiary'",
+      "as": "edu_level"
+    },
+    {
+      "joinaggregate": [
+        {"op": "sum", "field": "schools", "as": "total_schools"}
+      ],
+      "groupby": ["state"]
+    },
+    {"calculate": "datum.schools / datum.total_schools", "as": "percentage"}
+  ],
+  "mark": "bar",
+  "width": {"step": 17},
+  "encoding": {
+    "x": {"field": "state", "title": "State"},
+    "y": {
+      "field": "schools",
+      "type": "quantitative",
+      "title": "Number of Schools",
+      "stack": "normalize"
+    },
+    "color": {
+      "field": "edu_level",
+      "title": "Education Level",
+      "sort": ["Primary", "Secondary", "Tertiary"],
+      "scale": {"range": ["#de425b", "yellow", "blue"]}
+    },
+    "opacity": {
+      "condition": {
+        "test": "state_select == 'Malaysia' || datum.properties.Name == state_select",
+        "value": 1
+      },
+      "value": 0.2
+    },
+    "tooltip": [
+      {"field": "edu_level", "title": "Education Level"},
+      {"field": "schools", "title": "Number of Schools"},
+      {"field": "percentage", "title": "Percentage of Schools", "format": ".1%"}
+    ]
+  },
+  "config": {}
+}
