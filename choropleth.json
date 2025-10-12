@@ -57,8 +57,8 @@
       ],
       "mark": {
         "type": "geoshape",
-        "stroke": "black",
-        "strokeWidth": 3,
+        "stroke": "white",
+        "strokeWidth": 2.5,
         "fill": null
       }
     }
