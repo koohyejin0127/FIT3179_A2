@@ -35,7 +35,7 @@
       "title": "Schools per 100,000 People",
       "scale": {
         "domainMid": 33.6,
-        "range" : ["#b2182b", "#c6c6c6", "#2166ac"]
+        "range" : ["#b2182b", "#c6c6c6", "#17416c"]
       },
       "legend": {"orient": "bottom", "direction": "horizontal"}
     },
