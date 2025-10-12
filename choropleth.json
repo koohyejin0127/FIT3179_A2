@@ -49,8 +49,5 @@
       {"field": "total_population", "title": "Total Population"}
     ]
   },
-  "config": {
-    "title": {"font": "sans-serif", "fontSize": 16},
-    "view": {"stroke": "transparent"}
-  }
+  "config": {}
 }
