@@ -36,7 +36,7 @@
     },
     "opacity": {
       "condition": {
-        "test": "state_select == 'Malaysia' || datum.properties.Name == state_select",
+        "test": "state_select == 'Malaysia' || datum.state == state_select",
         "value": 1
       },
       "value": 0.2
