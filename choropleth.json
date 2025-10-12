@@ -32,6 +32,7 @@
     "color": {
       "field": "schools_per_100k",
       "type": "quantitative",
+      "title": "Schools per 100,000 People",
       "scale": {"scheme": "redblue"},
       "legend": {"orient": "bottom", "direction": "horizontal"}
     },
