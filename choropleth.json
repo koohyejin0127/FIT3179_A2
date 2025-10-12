@@ -51,7 +51,7 @@
       "test": "state_select == 'Malaysia' || datum.properties.Name == state_select",
       "value": 0.5
     },
-    "value": 2
+    "value": 3
   },
     "tooltip": [
       {"field": "properties.Name", "title": "State"},
