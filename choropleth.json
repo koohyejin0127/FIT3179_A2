@@ -33,7 +33,10 @@
       "field": "schools_per_100k",
       "type": "quantitative",
       "title": "Schools per 100,000 People",
-      "scale": {"scheme": "redblue"},
+      "scale": {
+        "domainMid": 33.6,
+        "range" : ["#b2182b", "#4d4d4d", "#2166ac"]
+      },
       "legend": {"orient": "bottom", "direction": "horizontal"}
     },
     "opacity": {
