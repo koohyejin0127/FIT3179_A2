@@ -1,0 +1,75 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Proportion of Population by Age Group across States (2022)",
+  "data": {
+    "url": "https://raw.githubusercontent.com/koohyejin0127/FIT3179_A2/refs/heads/main/data/population_filtered.csv"
+  },
+  "params": [{"name": "state_select", "value": "Malaysia"}],
+  "transform": [
+    {"filter": "datum.year == '2022'"},
+    {
+      "calculate": "datum.age == 'Children (0-14)' ? 1 : datum.age == 'Youth (15-24)' ? 2 : datum.age == 'Working Age (25-54)' ? 3 : datum.age == 'Retirement Age (55-64)' ? 4 : 5",
+      "as": "age_order"
+    },
+    {
+      "joinaggregate": [
+        {"op": "sum", "field": "population", "as": "total_population"}
+      ],
+      "groupby": ["state"]
+    },
+    {
+      "calculate": "datum.population / datum.total_population",
+      "as": "percentage"
+    }
+  ],
+  "mark": "bar",
+  "width": {"step": 17},
+  "encoding": {
+    "x": {"field": "state", "title": "State"},
+    "y": {
+      "field": "population",
+      "type": "quantitative",
+      "title": "Proportion of Population",
+      "stack": "normalize"
+    },
+    "color": {
+      "field": "age",
+      "title": "Age Group",
+      "scale": {
+        "domain": [
+          "Children (0-14)",
+          "Youth (15-24)",
+          "Working Age (25-54)",
+          "Retirement Age (55-64)",
+          "Elderly (65+)"
+        ],
+        "range": ["#de425b", "#f4d03f", "#5dade2", "#58d68d", "#7d3c98"]
+      },
+      "sort": [
+        "Children (0-14)",
+        "Youth (15-24)",
+        "Working Age (25-54)",
+        "Retirement Age (55-64)",
+        "Elderly (65+)"
+      ]
+    },
+    "order": {"field": "age_order", "type": "ordinal", "sort": "descending"},
+    "opacity": {
+      "condition": {
+        "test": "state_select == 'Malaysia' || datum.state == state_select",
+        "value": 1
+      },
+      "value": 0.2
+    },
+    "tooltip": [
+      {"field": "age", "title": "Age Group"},
+      {"field": "population", "title": "Population"},
+      {
+        "field": "percentage",
+        "title": "Percentage of Population",
+        "format": ".1%"
+      }
+    ]
+  },
+  "config": {}
+}
