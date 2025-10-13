@@ -8,6 +8,7 @@
   "transform": [
     {"filter": "datum.date == '1/1/2022'"},
     {"filter": "datum.state != 'Malaysia'"},
+    {"filter": "state_select == 'Malaysia' ? true : datum.state == state_select"},
     {
       "calculate": "datum.stage == 'primary' ? 1 : datum.stage == 'secondary' ? 2 : 3",
       "as": "xpos"
@@ -27,20 +28,14 @@
     "y": {
       "field": "students",
       "type": "quantitative",
-      "title": "Number of Students"
+      "title": "Number of Students",
+      "scale": {"domain": [0, 3000000]}
     },
     "color": {
       "field": "state",
       "type": "nominal",
       "title": "State",
       "scale": {"scheme": "category20b"}
-    },
-    "opacity": {
-      "condition": {
-        "test": "state_select == 'Malaysia' || datum.state == state_select",
-        "value": 1
-      },
-      "value": 0.2
     },
     "tooltip": [
       {"field": "state", "title": "State"},
