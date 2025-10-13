@@ -37,7 +37,7 @@
   },
   "spec": {
     "mark": "area",
-    "width": "container",
+    "width": 300,
     "height": 20,
     "view": {"stroke": null},
     "encoding": {
