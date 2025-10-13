@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Proportion of Population by Age Group across States (2022)",
+  "title": "Population by Age Group",
   "data": {
     "url": "https://raw.githubusercontent.com/koohyejin0127/FIT3179_A2/refs/heads/main/data/population_filtered.csv"
   },
