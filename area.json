@@ -30,14 +30,14 @@
         "title": "State",
         "labelAngle": 0,
         "labelAlign": "left",
-        "labelPadding": -50,
+        "labelPadding": -45,
         "titlePadding": 5
       }
     }
   },
   "spec": {
     "mark": "area",
-    "width": 400,
+    "width": "container",
     "height": 20,
     "view": {"stroke": null},
     "encoding": {
