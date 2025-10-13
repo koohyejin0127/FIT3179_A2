@@ -2,8 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title" : "Schools per 100,000 People",
   "params": [{"name": "state_select", "value": "Malaysia"}],
-  "width": 600,
-  "height": 400,
+  "width": "container",
   "projection": {"type": "equalEarth"},
   "data": {
     "url": "https://raw.githubusercontent.com/jnewbery/CartogramMalaysia/master/public/data/malaysia-states.topojson",
@@ -35,7 +34,7 @@
             "domainMid": 33.6,
             "range": ["#b2182b", "#c6c6c6", "#17416c"]
           },
-          "legend": {"orient": "bottom", "direction": "horizontal"}
+          "legend": {"orient": "bottom-right", "direction": "horizontal"}
         },
         "opacity": {
           "condition": {
