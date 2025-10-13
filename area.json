@@ -45,6 +45,7 @@
         "field": "xpos",
         "type": "ordinal",
         "title": "Education Level",
+        "scale": {"paddingInner": 0, "paddingOuter": 0},
         "axis": {
           "values": [1, 2, 3],
           "labelExpr": "datum.value == 1 ? 'Primary' : datum.value == 2 ? 'Secondary' : 'Tertiary'",
