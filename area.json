@@ -39,7 +39,7 @@
     },
     "tooltip": [
       {"field": "state", "title": "State"},
-      {"field": "edu_level", "title": "Education Level"},
+      {"field": "stage", "title": "Education Level"},
       {"field": "students", "title": "Number of Enrolment"}
     ]
   },
