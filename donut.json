@@ -1,0 +1,38 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Donut chart of education attainment in Malaysia (2021) from CSV",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/koohyejin0127/FIT3179_A2/refs/heads/main/data/employment.csv"
+  },
+  "transform": [
+    {"joinaggregate": [{"op": "sum", "field": "workers", "as": "sum_workers"}]},
+    {"calculate": "datum.workers / datum.sum_workers", "as": "percentage"}
+  ],
+  "mark": {"type": "arc", "innerRadius": 80},
+  "encoding": {
+    "theta": {"field": "workers", "type": "quantitative"},
+    "color": {
+      "field": "edu_attainment",
+      "type": "nominal",
+      "legend": {"title": "Education Level"},
+      "scale": {"scheme": ["#ffa600", "#ef5675", "#7a5195", "#003f5c"]}
+    },
+    "tooltip": [
+      {
+        "field": "edu_attainment",
+        "type": "nominal",
+        "title": "Education Level"
+      },
+      {
+        "field": "percentage",
+        "type": "quantitative",
+        "title": "% of Total",
+        "format": ".0%"
+      },
+      {"field": "workers", "type": "quantitative", "title": "Number of Workers"}
+    ]
+  },
+  "config": {}
+}
