@@ -1,5 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title" : "Schools per 100,000 People",
   "params": [{"name": "state_select", "value": "Malaysia"}],
   "width": 600,
   "height": 400,
