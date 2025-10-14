@@ -76,5 +76,9 @@
       }
     ]
   },
-  "config": {}
+  "config": {
+    "view": {
+      "padding": {"left": 5, "top": 5, "right": 0, "bottom": 5}
+    }
+  }
 }
