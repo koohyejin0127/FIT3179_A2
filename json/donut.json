@@ -2,36 +2,42 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 400,
   "height": 350,
+  "title": "Employment by Educational Attainment",
   "data": {
     "url": "https://raw.githubusercontent.com/koohyejin0127/FIT3179_A2/refs/heads/main/data/employment.csv"
   },
   "transform": [
     {"joinaggregate": [{"op": "sum", "field": "workers", "as": "sum_workers"}]},
-    {"calculate": "datum.workers / datum.sum_workers", "as": "percentage"}
+    {"calculate": "datum.workers / datum.sum_workers", "as": "percentage"},
+    {
+      "calculate": "datum.edu_attainment === 'No formal education' ? 'No Formal Education' : datum.edu_attainment",
+      "as": "edu_clean"
+    }
   ],
-  "mark": {"type": "arc", "innerRadius": 80},
-  "encoding": {
-    "theta": {"field": "workers", "type": "quantitative"},
-    "color": {
-      "field": "edu_attainment",
-      "type": "nominal",
-      "legend": {"title": "Education Level"},
-      "scale": {"scheme": ["#ffa600", "#ef5675", "#7a5195", "#003f5c"]}
+  "layer": [
+    {
+      "mark": {"type": "arc", "innerRadius": 80},
+      "encoding": {
+        "theta": {"field": "workers", "type": "quantitative"},
+        "color": {
+          "field": "edu_clean",
+          "type": "nominal",
+          "legend": null,
+          "scale": {"scheme": ["#ffa600", "#ef5675", "#7a5195", "#003f5c"]}
+        },
+        "tooltip": [
+          {"field": "edu_clean", "type": "nominal", "title": "Education Level"},
+          {"field": "percentage", "type": "quantitative", "title": "% of Total", "format": ".0%"},
+          {"field": "workers", "type": "quantitative", "title": "Number of Workers"}
+        ]
+      }
     },
-    "tooltip": [
-      {
-        "field": "edu_attainment",
-        "type": "nominal",
-        "title": "Education Level"
-      },
-      {
-        "field": "percentage",
-        "type": "quantitative",
-        "title": "% of Total",
-        "format": ".0%"
-      },
-      {"field": "workers", "type": "quantitative", "title": "Number of Workers"}
-    ]
-  },
+    {
+      "mark": {"type": "text", "align": "center", "baseline": "middle"},
+      "encoding": {
+        "text": {"value": "56% of Workforce : Secondary"}
+      }
+    }
+  ],
   "config": {}
 }
