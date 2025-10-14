@@ -1,7 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Donut chart of education attainment in Malaysia (2021) from CSV",
-  "width": "container",
   "data": {
     "url": "https://raw.githubusercontent.com/koohyejin0127/FIT3179_A2/refs/heads/main/data/employment.csv"
   },
