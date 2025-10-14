@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Government Schools by Education Level",
-  "width": 400,
+  "width": 300,
   "data": {
     "url": "https://raw.githubusercontent.com/koohyejin0127/FIT3179_A2/refs/heads/main/data/schools_states.csv"
   },
