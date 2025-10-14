@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Population by Age Group",
-  "width": 300,
+  "width": 350,
   "data": {
     "url": "https://raw.githubusercontent.com/koohyejin0127/FIT3179_A2/refs/heads/main/data/population_filtered.csv"
   },
@@ -24,10 +24,9 @@
     }
   ],
   "mark": "bar",
-  "width": {"step": 17},
   "encoding": {
-    "x": {"field": "state", "title": "State"},
-    "y": {
+    "y": {"field": "state", "title": "State"},
+    "x": {
       "field": "population",
       "type": "quantitative",
       "title": "Proportion of Population",
@@ -44,7 +43,7 @@
           "Retirement Age (55-64)",
           "Elderly (65+)"
         ],
-        "range": ["#de425b", "#f4d03f", "#5dade2", "#58d68d", "#7d3c98"]
+        "scheme": "purplebluegreen"
       },
       "sort": [
         "Children (0-14)",
@@ -54,7 +53,7 @@
         "Elderly (65+)"
       ]
     },
-    "order": {"field": "age_order", "type": "ordinal", "sort": "descending"},
+    "order": {"field": "age_order", "type": "ordinal", "sort": "ascending"},
     "opacity": {
       "condition": {
         "test": "state_select == 'Malaysia' || datum.state == state_select",
