@@ -1,7 +1,12 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Government Schools by Education Level",
-  "width": 300,
+  "width": 400,
+  "height": "container",
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
   "data": {
     "url": "https://raw.githubusercontent.com/koohyejin0127/FIT3179_A2/refs/heads/main/data/schools_states.csv"
   },
@@ -21,10 +26,9 @@
     {"calculate": "datum.schools / datum.total_schools", "as": "percentage"}
   ],
   "mark": "bar",
-  "width": {"step": 17},
   "encoding": {
-    "x": {"field": "state", "title": "State"},
-    "y": {
+    "y": {"field": "state", "title": "State"},
+    "x": {
       "field": "schools",
       "type": "quantitative",
       "title": "Number of Schools",
@@ -33,8 +37,14 @@
     "color": {
       "field": "edu_level",
       "title": "Education Level",
-      "sort": ["Primary", "Secondary", "Tertiary"],
-      "scale": {"range": ["#de425b", "yellow", "blue"]}
+      "scale": {
+        "domain": [
+          "Primary", 
+          "Secondary", 
+          "Tertiary"
+        ],
+        "range": ["#d186c0", "#e14da0", "#ab0749"]
+      }
     },
     "opacity": {
       "condition": {
