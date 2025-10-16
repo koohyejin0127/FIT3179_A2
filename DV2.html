@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang>
+<head>
+  <meta charset="UTF-8">
+  <title>Schools vs Population Dashboard</title>
+
+  <!-- Vega & Vega-Lite -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+  <!-- Pure.css -->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+    integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div class="page">
+
+    <!-- Header -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <h1>Education Access and Outcomes in Malaysia</h1>
+        <h2>Examining how school availability, enrolment, and educational attainment shape Malaysia's education landscape.</h2>
+      </div>
+    </div>
+
+    <div class="pure-g">
+        <!-- Dropdown column -->
+        <div class="pure-u-1-1">
+            <div class="dropdown-container">
+                 <select id="stateDropdown">
+                    <option>Malaysia</option>
+                    <option>Johor</option>
+                    <option>Kedah</option>
+                    <option>Kelantan</option>
+                    <option>Melaka</option>
+                    <option>Negeri Sembilan</option>
+                    <option>Pahang</option>
+                    <option>Perak</option>
+                    <option>Perlis</option>
+                    <option>Penang</option>
+                    <option>Sabah</option>
+                    <option>Sarawak</option>
+                    <option>Selangor</option>
+                    <option>Terengganu</option>
+                    <option>Kuala Lumpur</option>
+                    <option>Labuan</option>
+                    <option>Putrajaya</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Map and Cards -->
+    <div class="pure-g">
+        <!-- Paragraph Column-->
+         <div class="pure-u-1-3">
+            <div class="map_description">
+                <h3>Unequal Distribution of Government Schools</h3>
+                <p>
+                    While Malaysia has made strong progress in expanding its education system, 
+                    the number of schools per person varies widely across the country. 
+                    Some regions have far less access to schooling, 
+                    showing how population density and regional development shape educational opportunities.
+                </p>
+            </div>
+        </div>
+
+        <!-- Map column -->
+        <div class="pure-u-2-3">
+            <div id="map" class="vis-container"></div>
+        </div>
+    </div>
+
+    <!--Stacked Bar Charts-->
+    <div class="pure-g">
+        <!-- Bar Chart : Schools -->
+         <div class="pure-u-1-3">
+            <div id="bar_schools" class="vis-container"></div>
+        </div>
+
+        <!-- Bar Chart : Population-->
+        <div class="pure-u-1-3">
+            <div id="bar_pop" class="vis-container"></div>
+        </div>
+
+        <!-- Paragraph Column-->
+         <div class="pure-u-1-3">
+            <div class="bar_description">
+                <h3>Lack of Tertiary Institutions</h3>
+                <p>
+                    The majority of Malaysia's public education system consists of primary and secondary institutions, 
+                    while tertiary schools make up only a tiny fraction of the total. 
+                    This shortage is striking given the country's sizeable youth population. 
+                    The gap between available tertiary institutions and growing demand highlights the need to expand public education opportunities beyond the compulsory levels.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--Area Chart -->
+    <div class="pure-g">
+      <!-- Paragraph Column -->
+        <div class="pure-u-1-3">
+            <div class="areadonut_desc">
+                <h3>Enrolment Drops Sharply Beyond Secondary Education</h3>
+                <p>Enrolment is nearly universal at the primary level but declines noticeably at secondary school. 
+                    The drop becomes much sharper at the tertiary level, suggesting that many students do not continue beyond basic education. 
+                </p>
+            </div>
+        </div>
+
+        <!--Area Chart Column-->
+        <div class="pure-u-2-3">
+            <div id="area" class="vis-container"></div>
+        </div>
+    </div>
+
+    <!-- Line Chart -->
+    <div class="pure-g">
+      <div class="pure-u-1-3">
+          <div class="line_desc">
+            <h3>Education Growth Slows After 2020</h3>
+              <p>Over the years, the number of schools and enrolments has generally increased, 
+                showing steady expansion of the education system. 
+                However, in 2020 enrolment dropped, especially at the secondary and tertiary levels, before partially recovering. 
+                This slowdown highlights how external disruptions and structural limits have affected access and participation.
+              </p>
+          </div>
+      </div>
+
+      <div class="pure-u-2-3">
+        <div id="line" class="vis-container"></div>
+      </div>
+    </div>
+
+    <!-- Donut Chart -->
+     <div class="pure-g">
+      <!-- Donut Chart Column-->
+       <div class="pure-u-1-3">
+        <div id="donut" class="vis-container"></div>
+       </div>
+
+       <div class="pure-u-2-3">
+          <div class="donut">
+            <h3>When Secondary School Is Enough</h3>
+              <p>Over half of Malaysia's workforce stops at secondary education, 
+                showing that higher degrees aren't always needed to get a job. 
+                But this also explains why fewer students continue to tertiary level when the payoff often seems small.
+              </p>
+
+              <p>
+                The balance between access, opportunity and ambition reveals a deeper challenge in Malaysia's education system.
+                Education remains uneven and the path beyond secondary education is still narrow.
+                Expanding higher education isn't just about building more schools, it's about ensuring every student has a reason and a way to stay in the system. 
+              </p>
+          </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="pure-g">
+      <div class="pure-u-1-1 small-font">
+        <p>Sources: <a href="#" target="_blank">Malaysia Statistics</a>, blah</p>
+        <p>Author: <a href="#" target="_blank">Tan Hui Xin</a></p>
+        <p>Date: October 2025</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Vega Embedding -->
+  <script>
+    const mapURL = "https://raw.githubusercontent.com/koohyejin0127/FIT3179_A2/refs/heads/main/json/choropleth.json";
+    const barSchoolURL = "https://raw.githubusercontent.com/koohyejin0127/FIT3179_A2/refs/heads/main/json/bar_schools.json";
+    const barPopURL = "https://raw.githubusercontent.com/koohyejin0127/FIT3179_A2/refs/heads/main/json/bar_population.json";
+    const areaURL = "https://raw.githubusercontent.com/koohyejin0127/FIT3179_A2/refs/heads/main/json/area.json";
+    const donutURL = "https://raw.githubusercontent.com/koohyejin0127/FIT3179_A2/refs/heads/main/json/donut.json";
+    const lineURL = "https://raw.githubusercontent.com/koohyejin0127/FIT3179_A2/refs/heads/main/json/line.json";
+
+    Promise.all([
+      vegaEmbed("#map", mapURL),
+      vegaEmbed("#bar_schools", barSchoolURL),
+      vegaEmbed("#bar_pop", barPopURL),
+      vegaEmbed("#area", areaURL),
+      vegaEmbed("#donut", donutURL),
+      vegaEmbed("#line", lineURL)
+    ]).then(results => {
+      const views = results.map(r => r.view);
+
+      document.getElementById("stateDropdown").addEventListener("change", e => {
+        const val = e.target.value;
+        views.forEach(v => v.signal('state_select', val).runAsync());
+      });
+    });
+  </script>
+
+</body>
+</html>

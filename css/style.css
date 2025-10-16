@@ -1,0 +1,76 @@
+body * {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Times New Roman', serif;
+    margin-top: 0;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 0;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Times New Roman', serif;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+body {
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+/* --- Pure.css row --- */
+.pure-g { 
+    overflow: hidden;
+    margin-bottom: 40px; 
+    border-bottom: 1px solid #ccc; 
+    padding-bottom: 1em;
+}
+
+/* --- Visualisations --- */
+.vis-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+}
+
+/* --- Paragraphs --- */
+p {
+    line-height: 1.6;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+/* --- Dropdown --- */
+.dropdown-container {
+    text-align: right;
+    margin-bottom: 1em;
+}
+
+/* --- Footer --- */
+.small-font {
+    font-size: 0.7em;
+    color: #666;
+    text-align: right;
+    margin-top: 2em;
+}
