@@ -1,0 +1,241 @@
+state,stage,date,schools,students
+Johor,primary,1/1/2018,907,328093
+Johor,primary,1/1/2019,907,331130
+Johor,primary,1/1/2020,906,331190
+Johor,primary,1/1/2021,906,331877
+Johor,primary,1/1/2022,908,331205
+Johor,secondary,1/1/2018,280,240234
+Johor,secondary,1/1/2019,282,236489
+Johor,secondary,1/1/2020,283,236802
+Johor,secondary,1/1/2021,284,238814
+Johor,secondary,1/1/2022,284,238491
+Johor,tertiary,1/1/2018,2,13666
+Johor,tertiary,1/1/2019,2,12989
+Johor,tertiary,1/1/2020,2,7064
+Johor,tertiary,1/1/2021,2,6705
+Johor,tertiary,1/1/2022,2,6938
+Kedah,primary,1/1/2018,547,189797
+Kedah,primary,1/1/2019,547,189969
+Kedah,primary,1/1/2020,548,189170
+Kedah,primary,1/1/2021,548,189245
+Kedah,primary,1/1/2022,548,188524
+Kedah,secondary,1/1/2018,201,143535
+Kedah,secondary,1/1/2019,202,140346
+Kedah,secondary,1/1/2020,202,139192
+Kedah,secondary,1/1/2021,203,141216
+Kedah,secondary,1/1/2022,204,143591
+Kedah,tertiary,1/1/2018,1,9162
+Kedah,tertiary,1/1/2019,1,8808
+Kedah,tertiary,1/1/2020,1,5103
+Kedah,tertiary,1/1/2021,1,4638
+Kedah,tertiary,1/1/2022,1,4941
+Kelantan,primary,1/1/2018,418,171406
+Kelantan,primary,1/1/2019,418,172033
+Kelantan,primary,1/1/2020,418,170674
+Kelantan,primary,1/1/2021,418,171563
+Kelantan,primary,1/1/2022,418,172145
+Kelantan,secondary,1/1/2018,177,115720
+Kelantan,secondary,1/1/2019,177,121602
+Kelantan,secondary,1/1/2020,177,109486
+Kelantan,secondary,1/1/2021,178,111073
+Kelantan,secondary,1/1/2022,178,113329
+Kelantan,tertiary,1/1/2018,1,9766
+Kelantan,tertiary,1/1/2019,1,#N/A
+Kelantan,tertiary,1/1/2020,1,5101
+Kelantan,tertiary,1/1/2021,1,4837
+Kelantan,tertiary,1/1/2022,1,4776
+Melaka,primary,1/1/2018,237,82114
+Melaka,primary,1/1/2019,238,83634
+Melaka,primary,1/1/2020,238,84174
+Melaka,primary,1/1/2021,238,85433
+Melaka,primary,1/1/2022,238,86269
+Melaka,secondary,1/1/2018,77,62183
+Melaka,secondary,1/1/2019,77,61257
+Melaka,secondary,1/1/2020,77,61379
+Melaka,secondary,1/1/2021,77,62331
+Melaka,secondary,1/1/2022,78,62385
+Melaka,tertiary,1/1/2018,1,4018
+Melaka,tertiary,1/1/2019,1,4009
+Melaka,tertiary,1/1/2020,1,2157
+Melaka,tertiary,1/1/2021,1,1917
+Melaka,tertiary,1/1/2022,1,2233
+Negeri Sembilan,primary,1/1/2018,350,102539
+Negeri Sembilan,primary,1/1/2019,350,104329
+Negeri Sembilan,primary,1/1/2020,352,105196
+Negeri Sembilan,primary,1/1/2021,352,107601
+Negeri Sembilan,primary,1/1/2022,353,108856
+Negeri Sembilan,secondary,1/1/2018,125,81395
+Negeri Sembilan,secondary,1/1/2019,125,80278
+Negeri Sembilan,secondary,1/1/2020,125,81063
+Negeri Sembilan,secondary,1/1/2021,125,82626
+Negeri Sembilan,secondary,1/1/2022,126,83571
+Negeri Sembilan,tertiary,1/1/2018,1,5206
+Negeri Sembilan,tertiary,1/1/2019,1,4993
+Negeri Sembilan,tertiary,1/1/2020,1,3079
+Negeri Sembilan,tertiary,1/1/2021,1,2840
+Negeri Sembilan,tertiary,1/1/2022,1,3179
+Pahang,primary,1/1/2018,541,145698
+Pahang,primary,1/1/2019,542,146680
+Pahang,primary,1/1/2020,543,147764
+Pahang,primary,1/1/2021,543,150671
+Pahang,primary,1/1/2022,543,151624
+Pahang,secondary,1/1/2018,197,98483
+Pahang,secondary,1/1/2019,198,96726
+Pahang,secondary,1/1/2020,198,97008
+Pahang,secondary,1/1/2021,198,99359
+Pahang,secondary,1/1/2022,198,101823
+Pahang,tertiary,1/1/2018,1,7082
+Pahang,tertiary,1/1/2019,1,6720
+Pahang,tertiary,1/1/2020,1,3670
+Pahang,tertiary,1/1/2021,1,3543
+Pahang,tertiary,1/1/2022,1,3735
+Perak,primary,1/1/2018,852,200629
+Perak,primary,1/1/2019,852,201788
+Perak,primary,1/1/2020,852,200614
+Perak,primary,1/1/2021,852,201034
+Perak,primary,1/1/2022,852,200543
+Perak,secondary,1/1/2018,250,162961
+Perak,secondary,1/1/2019,250,158394
+Perak,secondary,1/1/2020,250,156914
+Perak,secondary,1/1/2021,250,158742
+Perak,secondary,1/1/2022,253,160387
+Perak,tertiary,1/1/2018,1,12737
+Perak,tertiary,1/1/2019,1,11948
+Perak,tertiary,1/1/2020,1,6542
+Perak,tertiary,1/1/2021,1,5741
+Perak,tertiary,1/1/2022,1,6376
+Perlis,primary,1/1/2018,74,23248
+Perlis,primary,1/1/2019,74,23650
+Perlis,primary,1/1/2020,74,23729
+Perlis,primary,1/1/2021,74,24175
+Perlis,primary,1/1/2022,74,24253
+Perlis,secondary,1/1/2018,30,18498
+Perlis,secondary,1/1/2019,30,17987
+Perlis,secondary,1/1/2020,30,18015
+Perlis,secondary,1/1/2021,30,18594
+Perlis,secondary,1/1/2022,30,19115
+Perlis,tertiary,1/1/2018,1,1905
+Perlis,tertiary,1/1/2019,1,1754
+Perlis,tertiary,1/1/2020,1,1081
+Perlis,tertiary,1/1/2021,1,947
+Perlis,tertiary,1/1/2022,1,1052
+Penang,primary,1/1/2018,271,130190
+Penang,primary,1/1/2019,271,131575
+Penang,primary,1/1/2020,271,130713
+Penang,primary,1/1/2021,271,130415
+Penang,primary,1/1/2022,270,129598
+Penang,secondary,1/1/2018,128,100598
+Penang,secondary,1/1/2019,128,98380
+Penang,secondary,1/1/2020,128,97720
+Penang,secondary,1/1/2021,129,98608
+Penang,secondary,1/1/2022,128,98578
+Penang,tertiary,1/1/2018,1,6864
+Penang,tertiary,1/1/2019,1,6592
+Penang,tertiary,1/1/2020,1,3605
+Penang,tertiary,1/1/2021,1,3379
+Penang,tertiary,1/1/2022,1,3454
+Sabah,primary,1/1/2018,1074,277583
+Sabah,primary,1/1/2019,1074,284266
+Sabah,primary,1/1/2020,1075,289528
+Sabah,primary,1/1/2021,1075,292188
+Sabah,primary,1/1/2022,1075,292541
+Sabah,secondary,1/1/2018,222,190742
+Sabah,secondary,1/1/2019,222,189409
+Sabah,secondary,1/1/2020,222,190600
+Sabah,secondary,1/1/2021,221,198935
+Sabah,secondary,1/1/2022,221,204780
+Sabah,tertiary,1/1/2018,1,17833
+Sabah,tertiary,1/1/2019,1,18921
+Sabah,tertiary,1/1/2020,1,10006
+Sabah,tertiary,1/1/2021,1,10169
+Sabah,tertiary,1/1/2022,1,9543
+Sarawak,primary,1/1/2018,1265,244941
+Sarawak,primary,1/1/2019,1265,244813
+Sarawak,primary,1/1/2020,1265,242258
+Sarawak,primary,1/1/2021,1265,239373
+Sarawak,primary,1/1/2022,1265,235319
+Sarawak,secondary,1/1/2018,192,185852
+Sarawak,secondary,1/1/2019,193,183866
+Sarawak,secondary,1/1/2020,193,184190
+Sarawak,secondary,1/1/2021,193,188147
+Sarawak,secondary,1/1/2022,193,189658
+Sarawak,tertiary,1/1/2018,1,14963
+Sarawak,tertiary,1/1/2019,1,14722
+Sarawak,tertiary,1/1/2020,1,7597
+Sarawak,tertiary,1/1/2021,1,7793
+Sarawak,tertiary,1/1/2022,1,7502
+Selangor,primary,1/1/2018,661,518388
+Selangor,primary,1/1/2019,661,529031
+Selangor,primary,1/1/2020,662,535486
+Selangor,primary,1/1/2021,663,545086
+Selangor,primary,1/1/2022,661,548622
+Selangor,secondary,1/1/2018,278,353931
+Selangor,secondary,1/1/2019,278,354162
+Selangor,secondary,1/1/2020,278,356024
+Selangor,secondary,1/1/2021,278,363704
+Selangor,secondary,1/1/2022,279,367664
+Selangor,tertiary,1/1/2018,4,14221
+Selangor,tertiary,1/1/2019,4,13694
+Selangor,tertiary,1/1/2020,4,7518
+Selangor,tertiary,1/1/2021,4,7301
+Selangor,tertiary,1/1/2022,4,7479
+Terengganu,primary,1/1/2018,352,126465
+Terengganu,primary,1/1/2019,352,128551
+Terengganu,primary,1/1/2020,352,130208
+Terengganu,primary,1/1/2021,352,132839
+Terengganu,primary,1/1/2022,352,134557
+Terengganu,secondary,1/1/2018,151,93671
+Terengganu,secondary,1/1/2019,152,92354
+Terengganu,secondary,1/1/2020,152,91970
+Terengganu,secondary,1/1/2021,153,94978
+Terengganu,secondary,1/1/2022,154,97169
+Terengganu,tertiary,1/1/2018,2,6695
+Terengganu,tertiary,1/1/2019,2,6420
+Terengganu,tertiary,1/1/2020,2,3445
+Terengganu,tertiary,1/1/2021,2,3134
+Terengganu,tertiary,1/1/2022,2,3405
+Kuala Lumpur,primary,1/1/2018,194,127633
+Kuala Lumpur,primary,1/1/2019,191,130276
+Kuala Lumpur,primary,1/1/2020,191,131465
+Kuala Lumpur,primary,1/1/2021,190,133248
+Kuala Lumpur,primary,1/1/2022,188,133531
+Kuala Lumpur,secondary,1/1/2018,104,86265
+Kuala Lumpur,secondary,1/1/2019,104,84761
+Kuala Lumpur,secondary,1/1/2020,104,84940
+Kuala Lumpur,secondary,1/1/2021,104,86009
+Kuala Lumpur,secondary,1/1/2022,104,86197
+Kuala Lumpur,tertiary,1/1/2018,2,3106
+Kuala Lumpur,tertiary,1/1/2019,2,3101
+Kuala Lumpur,tertiary,1/1/2020,2,1864
+Kuala Lumpur,tertiary,1/1/2021,2,1598
+Kuala Lumpur,tertiary,1/1/2022,2,1737
+Labuan,primary,1/1/2018,17,9065
+Labuan,primary,1/1/2019,17,9393
+Labuan,primary,1/1/2020,17,9703
+Labuan,primary,1/1/2021,17,9864
+Labuan,primary,1/1/2022,17,9925
+Labuan,secondary,1/1/2018,10,5710
+Labuan,secondary,1/1/2019,10,5765
+Labuan,secondary,1/1/2020,10,5973
+Labuan,secondary,1/1/2021,10,6317
+Labuan,secondary,1/1/2022,11,6821
+Labuan,tertiary,1/1/2018,0,613
+Labuan,tertiary,1/1/2019,0,607
+Labuan,tertiary,1/1/2020,0,303
+Labuan,tertiary,1/1/2021,0,232
+Labuan,tertiary,1/1/2022,0,281
+Putrajaya,primary,1/1/2018,14,16990
+Putrajaya,primary,1/1/2019,14,18586
+Putrajaya,primary,1/1/2020,16,20123
+Putrajaya,primary,1/1/2021,16,21590
+Putrajaya,primary,1/1/2022,16,22503
+Putrajaya,secondary,1/1/2018,11,7828
+Putrajaya,secondary,1/1/2019,11,8465
+Putrajaya,secondary,1/1/2020,11,9209
+Putrajaya,secondary,1/1/2021,11,10334
+Putrajaya,secondary,1/1/2022,11,11436
+Putrajaya,tertiary,1/1/2018,0,175
+Putrajaya,tertiary,1/1/2019,0,258
+Putrajaya,tertiary,1/1/2020,0,161
+Putrajaya,tertiary,1/1/2021,0,130
+Putrajaya,tertiary,1/1/2022,0,139
