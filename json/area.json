@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Enrolment by Education Level Across States",
   "data": {
-    "url": "https://raw.githubusercontent.com/koohyejin0127/FIT3179_A2/refs/heads/main/data/enrolment_filtered.csv"
+    "url": "https://raw.githubusercontent.com/koohyejin0127/FIT3179_A2/refs/heads/main/data/school_enrol.csv"
   },
   "params": [{"name": "state_select", "value": "Malaysia"}],
   "transform": [
