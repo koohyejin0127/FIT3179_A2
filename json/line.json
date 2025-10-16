@@ -1,0 +1,100 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Schools vs Student Enrolment Over Time",
+  "width": 600,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/koohyejin0127/FIT3179_A2/refs/heads/main/data/school_enrol.csv",
+    "format": {"type": "csv"}
+  },
+  "params": [
+    {
+      "name": "stage_select",
+      "value": "all_levels",
+      "bind": {
+        "input": "select",
+        "options": ["all_levels", "primary", "secondary", "tertiary"],
+        "labels": ["All Levels", "Primary", "Secondary", "Tertiary"],
+        "name": "Select Education Level: "
+      }
+    }
+  ],
+  "transform": [
+    {"calculate": "toDate(datum.date)", "as": "parsed_date"},
+    {"calculate": "toNumber(datum.students)", "as": "students_num"},
+    {"calculate": "toNumber(datum.schools)", "as": "schools_num"},
+    {"filter": "stage_select == 'all_levels' || datum.stage == stage_select"},
+    {"timeUnit": "year", "field": "parsed_date", "as": "year"},
+    {
+      "aggregate": [
+        {"op": "mean", "field": "schools_num", "as": "avg_schools"},
+        {"op": "mean", "field": "students_num", "as": "avg_students"}
+      ],
+      "groupby": ["year"]
+    }
+  ],
+  "layer": [
+    {
+      "mark": {"type": "line", "color": "#9017cd", "point": "transparent"},
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "temporal",
+          "timeUnit": "year",
+          "axis": {"title": "Year", "format": "%Y"}
+        },
+        "y": {
+          "field": "avg_schools",
+          "type": "quantitative",
+          "scale": {"zero": false},
+          "axis": {
+            "title": "Average Number of Schools",
+            "titleColor": "#9017cd",
+            "format": ".1f",
+            "tickCount": 5
+          }
+        },
+        "tooltip": [
+          {
+            "field": "year",
+            "type": "temporal",
+            "title": "Year",
+            "format": "%Y"
+          },
+          {"field": "avg_schools", "title": "Avg. Schools", "format": ",.2f"}
+        ]
+      }
+    },
+    {
+      "mark": {"type": "line", "color": "#ec8653", "point": "transparent"},
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "temporal",
+          "timeUnit": "year",
+          "axis": {"title": null}
+        },
+        "y": {
+          "field": "avg_students",
+          "type": "quantitative",
+          "scale": {"zero": false},
+          "axis": {
+            "title": "Average Number of Students",
+            "titleColor": "#ec8653"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "year",
+            "type": "temporal",
+            "title": "Year",
+            "format": "%Y"
+          },
+          {"field": "avg_students", "title": "Avg. Students", "format": ",.0f"}
+        ]
+      }
+    }
+  ],
+  "resolve": {"scale": {"y": "independent"}},
+  "config": {}
+}
