@@ -8,7 +8,7 @@
     "contains": "padding"
   },
   "data": {
-    "url": "https://raw.githubusercontent.com/koohyejin0127/FIT3179_A2/refs/heads/main/data/schools_states.csv"
+    "url": "https://raw.githubusercontent.com/koohyejin0127/FIT3179_A2/refs/heads/main/data/school_enrol.csv"
   },
   "params": [{"name": "state_select", "value": "Malaysia"}],
   "transform": [
