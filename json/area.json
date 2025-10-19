@@ -1,85 +1,46 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Enrolment by Education Level Across States",
+  "title": "Enrolment by Education Level",
   "data": {
     "url": "https://raw.githubusercontent.com/koohyejin0127/FIT3179_A2/refs/heads/main/data/school_enrol.csv"
   },
-  "params": [{"name": "state_select", "value": "Malaysia"}],
   "transform": [
     {"filter": "datum.date == '1/1/2022'"},
     {"filter": "datum.state != 'Malaysia'"},
-    {"calculate": "datum.stage == 'primary' ? 1 : datum.stage == 'secondary' ? 2 : 3",
-    "as": "xpos"
-    },
+    {"calculate": "datum.stage == 'primary' ? 1 : datum.stage == 'secondary' ? 2 : 3", "as": "xpos"},
+    {"calculate": "datum.stage == 'primary' ? 'Primary' : datum.stage == 'secondary' ? 'Secondary' : 'Tertiary'", "as": "edu_labels"},
     {"calculate": "toNumber(datum.students)", "as": "students_num"},
     {
-      "window": [{"op": "max", "field": "students_num", "as": "max_students"}],
-      "groupby": ["state"]
-    },
-    {
-      "calculate": "(datum.students / datum.max_students)",
-      "as": "students_percentage"
+      "aggregate": [{"op": "sum", "field": "students_num", "as": "total_students"}],
+      "groupby": ["edu_labels", "xpos"]
     }
   ],
-  "spacing": {"row": 1},
-  "facet": {
-    "row": {
-      "field": "state",
-      "type": "nominal",
-      "header": {
-        "title": "State",
-        "labelAngle": 0,
-        "labelAlign": "left",
-        "labelPadding": -125,
-        "titlePadding": -20
+  "mark": {"type": "area", "line": {"color": "black"}, "point":"transparent"},
+  "encoding": {
+    "x": {
+      "field": "xpos",
+      "type": "quantitative",
+      "title": "Education Level",
+      "axis": {
+        "values": [1, 2, 3],
+        "labelExpr": "datum.value == 1 ? 'Primary' : datum.value == 2 ? 'Secondary' : 'Tertiary'",
+        "labelAngle": 0
       }
-    }
+    },
+    "y": {
+      "field": "total_students",
+      "type": "quantitative",
+      "title": "Number of Students"
+    },
+    "color": {
+      "value": "#7a5195"
+    },
+    "tooltip": [
+      {"field": "edu_labels", "title": "Education Level"},
+      {"field": "total_students", "title": "Total Students"}
+    ]
   },
-  "spec": {
-    "mark": "area",
-    "width": 800,
-    "height": 20,
-    "view": {"stroke": null},
-    "encoding": {
-      "x": {
-        "field": "xpos",
-        "type": "ordinal",
-        "title": "Education Level",
-        "axis": {
-          "values": [1, 2, 3],
-          "labelExpr": "datum.value == 1 ? 'Primary' : datum.value == 2 ? 'Secondary' : 'Tertiary'",
-          "labelAngle": 0
-        }
-      },
-      "y": {
-        "field": "students_percentage",
-        "type": "quantitative",
-        "scale": {"zero": false},
-        "axis": {
-          "title":null, 
-          "labels": false, 
-          "ticks": false}
-      },
-      "color": {
-        "field": "state",
-        "type": "nominal",
-        "legend": null,
-        "scale": {"scheme": "category20b"}
-      },
-      "opacity": {
-      "condition": {
-        "test": "state_select == 'Malaysia' || datum.state == state_select",
-        "value": 1
-      },
-      "value": 0.2
-      },
-      "tooltip": [
-        {"field": "state", "title": "State"},
-        {"field": "stage", "title": "Education Level"},
-        {"field": "students", "title": "Number of Students"},
-        {"field": "students_percentage", "format": "%", "title": "% of Primary Enrolment"}
-      ]
-    }
-  },
-  "config": {"axis": {"grid": false, "domain": false}}
+  "width": 800,
+  "height": 400,
+  "config": {"axis": {"grid": false}}
 }
