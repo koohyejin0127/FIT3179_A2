@@ -1,8 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Schools vs Student Enrolment Over Time",
-  "width": 600,
-  "height": 300,
+  "title": "Schools and Student Enrolment Over Time",
   "data": {
     "url": "https://raw.githubusercontent.com/koohyejin0127/FIT3179_A2/refs/heads/main/data/school_enrol.csv",
     "format": {"type": "csv"}
@@ -31,70 +29,58 @@
         {"op": "mean", "field": "students_num", "as": "avg_students"}
       ],
       "groupby": ["year"]
-    }
-  ],
-  "layer": [
-    {
-      "mark": {"type": "line", "color": "#9017cd", "point": "transparent"},
-      "encoding": {
-        "x": {
-          "field": "year",
-          "type": "temporal",
-          "timeUnit": "year",
-          "axis": {"title": "Year", "format": "%Y"}
-        },
-        "y": {
-          "field": "avg_schools",
-          "type": "quantitative",
-          "scale": {"zero": false},
-          "axis": {
-            "title": "Average Number of Schools",
-            "titleColor": "#9017cd",
-            "format": ".1f",
-            "tickCount": 5
-          }
-        },
-        "tooltip": [
-          {
-            "field": "year",
-            "type": "temporal",
-            "title": "Year",
-            "format": "%Y"
-          },
-          {"field": "avg_schools", "title": "Avg. Schools", "format": ",.2f"}
-        ]
-      }
     },
-    {
-      "mark": {"type": "line", "color": "#ec8653", "point": "transparent"},
-      "encoding": {
-        "x": {
-          "field": "year",
-          "type": "temporal",
-          "timeUnit": "year",
-          "axis": {"title": null}
-        },
-        "y": {
-          "field": "avg_students",
-          "type": "quantitative",
-          "scale": {"zero": false},
-          "axis": {
-            "title": "Average Number of Students",
-            "titleColor": "#ec8653"
-          }
-        },
-        "tooltip": [
-          {
-            "field": "year",
-            "type": "temporal",
-            "title": "Year",
-            "format": "%Y"
-          },
-          {"field": "avg_students", "title": "Avg. Students", "format": ",.0f"}
-        ]
-      }
+    {"fold": [
+      {"field": "avg_schools", "as": "Schools"},
+      {"field": "avg_students", "as": "Students"}],
+      "as": ["Type", "Value"]
     }
   ],
-  "resolve": {"scale": {"y": "independent"}},
-  "config": {}
+  "facet": {
+    "row": {
+      "field": "Type",
+      "title": null
+    }
+  },
+  "spec": {
+    "height": 150,
+    "width": 800,
+    "mark": {"type": "line", "point": true},
+    "encoding": {
+      "x": {
+        "field": "year",
+        "type": "temporal",
+        "axis": {
+          "title": "Year", 
+          "format": "%Y", 
+          "tickCount": {"interval": "year", "step": 1}}
+      },
+      "y": {
+        "field": "Value",
+        "type": "quantitative",
+        "axis": {"title": "Average Count"},
+        "scale": {"zero": false}
+      },
+      "color": {
+        "field": "Type",
+        "type": "nominal",
+        "scale": {"range": ["#9017cd", "#ec8653"]},
+        "legend": null
+      },
+      "tooltip": [
+        {"field": "year", "type": "temporal", "title": "Year", "format": "%Y"},
+        {"field": "Type", "title": "Category"},
+        {"field": "Value", "title": "Average Count", "format": ",.0f"}
+      ]
+    }
+  },
+  "resolve": {
+    "scale": {
+      "y": "independent",
+      "x": "shared"}},
+  "config": {
+    "axis": {"grid": false},
+    "facet": {"spacing": 20},
+    "title": {"fontSize": 16, "fontWeight": "bold"}
+  }
 }
