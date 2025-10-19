@@ -3,7 +3,7 @@ body * {
 }
 
 h1 {
-    font-family: 'Times New Roman', serif;
+    font-family: 'Cactus Classical Serif', serif;
     margin-top: 0;
     text-align: center;
 }
@@ -15,10 +15,16 @@ h2 {
 }
 
 h3 {
-    font-family: 'Times New Roman', serif;
+    font-family: 'Cactus Classical Serif', serif;
     font-size: 1.5em;
     margin-bottom: 0.5em;
-    text-align: center;
+    text-align: left;
+}
+
+p {
+    line-height: 1.6;
+    text-align: left;
+    word-wrap: break-word;
 }
 
 body {
@@ -54,17 +60,10 @@ body {
     box-sizing: border-box;
 }
 
-/* --- Paragraphs --- */
-p {
-    line-height: 1.6;
-    text-align: center;
-    word-wrap: break-word;
-}
-
 /* --- Dropdown --- */
 .dropdown-container {
     text-align: right;
-    margin-bottom: 1em;
+    margin-bottom: 0.3em;
 }
 
 /* --- Footer --- */
@@ -72,5 +71,26 @@ p {
     font-size: 0.7em;
     color: #666;
     text-align: right;
-    margin-top: 2em;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    line-height: 1.5;
+}
+
+.small-font p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+.footer-row {
+    border-bottom: none;
+    border-top: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    padding-top: 0;
 }
