@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 400,
-  "height": 350,
+  "width": 350,
+  "height": 400,
   "title": "Employment by Educational Attainment",
   "data": {
     "url": "https://raw.githubusercontent.com/koohyejin0127/FIT3179_A2/refs/heads/main/data/employment.csv"
@@ -22,7 +22,7 @@
         "color": {
           "field": "edu_clean",
           "type": "nominal",
-          "legend": null,
+          "legend": {"title": "Education Level"},
           "scale": {"scheme": ["#ffa600", "#ef5675", "#7a5195", "#003f5c"]}
         },
         "tooltip": [
