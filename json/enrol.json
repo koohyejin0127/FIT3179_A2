@@ -35,7 +35,8 @@
       "field": "edu_labels",
       "type": "nominal",
       "scale": {"range": ["#b55485", "#7a5195", "#3d4879"]},
-      "title": "Education Level"
+      "title": "Education Level",
+      "legend": null
     },
     "tooltip": [
       {"field": "edu_labels", "title": "Education Level"},
