@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Student Enrolment by Education Level (2022)",
+  "data": {
+    "url": "https://raw.githubusercontent.com/koohyejin0127/FIT3179_A2/refs/heads/main/data/school_enrol.csv"
+  },
+  "width": 400,
+  "height": 400,
+  "transform": [
+    {"filter": "datum.date == '1/1/2022'"},
+    {"filter": "datum.state != 'Malaysia'"},
+    {
+      "aggregate": [{"op": "sum", "field": "students", "as": "total_students"}],
+      "groupby": ["stage"]
+    },
+    {
+      "calculate": "datum.stage == 'primary' ? 'Primary' : datum.stage == 'secondary' ? 'Secondary' : 'Tertiary'",
+      "as": "edu_labels"
+    }
+  ],
+  "mark": {"type": "bar"},
+  "encoding": {
+    "x": {
+      "field": "edu_labels",
+      "type": "ordinal",
+      "title": "Education Level",
+      "sort": ["Primary", "Secondary", "Tertiary"]
+    },
+    "y": {
+      "field": "total_students",
+      "type": "quantitative",
+      "title": "Number of Students"
+    },
+    "color": {
+      "field": "edu_labels",
+      "type": "nominal",
+      "scale": {"range": ["#b55485", "#7a5195", "#3d4879"]},
+      "title": "Education Level"
+    },
+    "tooltip": [
+      {"field": "edu_labels", "title": "Education Level"},
+      {"field": "total_students", "title": "Total Students"}
+    ]
+  },
+  "config": {"axis": {"grid": false}}
+}
