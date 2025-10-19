@@ -64,7 +64,7 @@
       "color": {
         "field": "Type",
         "type": "nominal",
-        "scale": {"range": ["#9017cd", "#ec8653"]},
+        "scale": {"range": ["#15579e", "#5d8ec2"]},
         "legend": null
       },
       "tooltip": [
