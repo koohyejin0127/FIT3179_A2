@@ -3,10 +3,6 @@
   "title": "Government Schools by Education Level",
   "width": 400,
   "height": 400,
-  "autosize": {
-    "type": "fit",
-    "contains": "padding"
-  },
   "data": {
     "url": "https://raw.githubusercontent.com/koohyejin0127/FIT3179_A2/refs/heads/main/data/school_enrol.csv"
   },
@@ -25,7 +21,8 @@
     },
     {"calculate": "datum.schools / datum.total_schools", "as": "percentage"}
   ],
-  "mark": "bar",
+  "layer": [
+    {  "mark": "bar",
   "encoding": {
     "y": {"field": "state", "title": "State"},
     "x": {
@@ -56,8 +53,21 @@
     "tooltip": [
       {"field": "edu_level", "title": "Education Level"},
       {"field": "schools", "title": "Number of Schools"},
-      {"field": "percentage", "title": "Percentage of Schools", "format": ".1%"}
-    ]
-  },
-  "config": {}
+      {"field": "percentage", "title": "Percentage of Schools", "format": ".1%"}]
+      }
+    },
+    {
+      "mark": {
+      "type": "text",
+      "align":"left",
+      "dx": 5
+      },
+      "transform": [{"filter": "datum.edu_level == 'Tertiary' && datum.state == 'Perlis'"}],
+      "encoding": {
+        "x": {"aggregate": "sum", "field": "schools"},
+        "y": {"field": "state"},
+        "text": {"value": "Tertiary is NOT missing!"}
+      }
+    }
+  ]
 }
