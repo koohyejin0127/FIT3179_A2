@@ -3,6 +3,10 @@
   "title": "Government Schools by Education Level",
   "width": 400,
   "height": 400,
+    "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
   "data": {
     "url": "https://raw.githubusercontent.com/koohyejin0127/FIT3179_A2/refs/heads/main/data/school_enrol.csv"
   },
